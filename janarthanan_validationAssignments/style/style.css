@@ -1,0 +1,51 @@
+#heading span{
+    font-weight: bold;
+}
+label span{
+    color: red;
+}
+form{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+form input{
+    font-size: 15px;
+}
+form h2,form p{
+    text-align: center;
+    
+}
+table tr td{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+button{
+    margin-left: 90%;
+    background-color: royalblue;
+    color: white;
+    font-size: 20px;
+}
+table tr td #invaliduser,table tr td #lastname,table tr td #emailvalid,table tr td #dobvalid,table tr td #mobilenumbervalid,#addressvalid{
+    color: red;
+    visibility: hidden;
+}
+#cityvalid,#zip1valid,#zip_valid{
+    color: red;
+    visibility: hidden;
+}
+#addressvalid ,#cityvalid{
+    padding-left: 60px;
+}
+table tr td #emailvalid,table tr td #dobvalid,table tr td #mobilenumbervalid{
+    padding-left: 30px;
+}
+#uploadbutton{
+    background-color: blue;
+    outline: blue;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}

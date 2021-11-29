@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <form action="#">
+        <div id="heading">
+            <h2>Submit Your Application</h2>
+            <p>for <span>.Net Developers(freshers)</span></p>
+        </div>
+        <h3>Personal Information</h3>
+        <table>
+            <tr>
+                <td><label for="name">Name as per ID proof <span>*</span></label></td>
+                <td></td>
+                <td><label for="fathername">Father's Name<span>*</span></label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="name" onchange="namefunction()"></td>
+                <td><label id="invaliduser">Invalid username</label></td>
+                <td> <input type="text" id="fathername" onchange="fatherfunction()"></td>
+                <td><label id="lastname">Lastname is required </label></td>
+            </tr>
+            <tr>
+                <td> <label for="email">Email<span>*</span></label><label id="emailvalid">email is required</label></td>
+                
+                <td><label for="dob">Date of birth<span>*</span></label><label id="dobvalid">required</label></td>
+                <td><label for="mobilenumber">Mobile No<span>*</span></label><label id="mobilenumbervalid">required</label></td>
+            </tr>
+            <tr>
+                <td> <input type="email" id="email" onchange="emailfunction()"></td>
+                <td><input type="text" id="dob" placeholder="DD-MM-YYYY"  onchange="dobfunction()"></td>
+                <td><input type="number" id="mobilenumber" onchange="mobilenumberfunction()"></td>
+            </tr>
+        </table>
+        <label for="address">Current Address<span>*</span></label>
+        <br><br>
+        <input type="text" id="address" placeholder="Address line 1">
+        <input type="text" id="addressln2" placeholder="Address line 2">
+        <br>
+        <br>
+        <input type="text" id="city1" placeholder="city">
+        <select name="state" id="state">
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Andhra">Andhra</option>
+            <option value="Karnataka">Karnataka</option>
+        </select>
+        <input type="number" id="zip" placeholder="zipcode" onchange="zipfunction()">
+        <label id="zip_valid"></label>
+        <br><br>
+        <label for="address">Permanent address<span>*</span></label>
+        <input type="checkbox" id="check" onclick="checkedfunction()"><label>same as Current Address</label>
+        <legend id="addressvalid">Address is required</legend>
+        <input type="text" id="address1" placeholder="Address line 1">
+        <input type="text" id="address1ln2" placeholder="Address line 2">
+        <br>
+        <br>
+        <legend id="cityvalid">city required</legend>
+        <input type="text" id="city" placeholder="city">
+        <select name="state" id="state1">
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Andhra">Andhra</option>
+            <option value="Karnataka">Karnataka</option>
+        </select>
+        <input type="number" id="zip1" placeholder="zipcode" onchange="zip1function()">
+        <label id="zip1valid">Zip code is required</label>
+        <br><br>
+        <h3>Upload Profile Photo<span>*</span></h3>
+        <p>Please upload photo of your self.Your face should be clearly visible.Make sure the image size does not exceed 500kb</p>
+        <label for="photo" id="uploadbutton">Uploadfile</label>
+        <label id="photovalid">Required</label>
+        <input type="file" name="Upload file"  value="photo upload" id="photo" accept="image/*" oninput="selectPhoto()" style="visibility: hidden;">
+        <button onclick="submitfunction()">Submit</button>
+    </form>
+</body>
+</html>
